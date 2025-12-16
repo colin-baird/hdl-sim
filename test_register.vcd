@@ -1,0 +1,140 @@
+$timescale 1ns $end
+$scope module top $end
+$var wire 1 clk clk $end
+$var wire 8 q_reg q_reg $end
+$var wire 8 q q $end
+$var wire 1 rst rst_input $end
+$var wire 8 d d_input $end
+$var reg 8 q_reg_in q_reg_in $end
+$var wire 1 clk clk_input $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0clk
+b00000000 q_reg
+b00000000 q
+0rst
+b00000000 d
+b00000000 q_reg_in
+0clk
+$end
+#0
+1clk
+b00000000 q_reg
+b00000000 q
+1rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#1
+0clk
+#2
+1clk
+b00000000 q_reg
+b00000000 q
+1rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#3
+0clk
+#4
+1clk
+b00000000 q_reg
+b00000000 q
+0rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#5
+0clk
+#6
+1clk
+b00000000 q_reg
+b00000000 q
+0rst
+b00101010 d
+b00101010 q_reg_in
+1clk
+#7
+0clk
+#8
+1clk
+b00101010 q_reg
+b00101010 q
+0rst
+b01100100 d
+b01100100 q_reg_in
+1clk
+#9
+0clk
+#10
+1clk
+b01100100 q_reg
+b01100100 q
+0rst
+b11111111 d
+b11111111 q_reg_in
+1clk
+#11
+0clk
+#12
+1clk
+b11111111 q_reg
+b11111111 q
+0rst
+b10000000 d
+b10000000 q_reg_in
+1clk
+#13
+0clk
+#14
+1clk
+b10000000 q_reg
+b10000000 q
+0rst
+b00000001 d
+b00000001 q_reg_in
+1clk
+#15
+0clk
+#16
+1clk
+b00000001 q_reg
+b00000001 q
+0rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#17
+0clk
+#18
+1clk
+b00000000 q_reg
+b00000000 q
+0rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#19
+0clk
+#20
+1clk
+b00000000 q_reg
+b00000000 q
+0rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#21
+0clk
+#22
+1clk
+b00000000 q_reg
+b00000000 q
+0rst
+b00000000 d
+b00000000 q_reg_in
+1clk
+#23
+0clk

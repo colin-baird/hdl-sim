@@ -1,0 +1,96 @@
+$timescale 1ns $end
+$scope module top $end
+$var wire 1 clk clk $end
+$var wire 1 sel sel_input $end
+$var wire 1 b b_input $end
+$var wire 1 a a_input $end
+$var wire 1 y y $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0clk
+0sel
+0b
+0a
+0y
+$end
+#0
+1clk
+0sel
+0b
+0a
+0y
+#1
+0clk
+#2
+1clk
+0sel
+0b
+1a
+1y
+#3
+0clk
+#4
+1clk
+0sel
+1b
+0a
+0y
+#5
+0clk
+#6
+1clk
+0sel
+1b
+1a
+1y
+#7
+0clk
+#8
+1clk
+1sel
+0b
+0a
+0y
+#9
+0clk
+#10
+1clk
+1sel
+0b
+1a
+0y
+#11
+0clk
+#12
+1clk
+1sel
+1b
+0a
+1y
+#13
+0clk
+#14
+1clk
+1sel
+1b
+1a
+1y
+#15
+0clk
+#16
+1clk
+0sel
+0b
+0a
+0y
+#17
+0clk
+#18
+1clk
+0sel
+0b
+0a
+0y
+#19
+0clk

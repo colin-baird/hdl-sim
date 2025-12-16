@@ -1,0 +1,448 @@
+$timescale 1ns $end
+$scope module top $end
+$var wire 1 clk clk $end
+$var wire 4 counter_b counter_b $end
+$var wire 4 counter_a counter_a $end
+$var wire 1 counters_equal counters_equal $end
+$var wire 4 sum sum $end
+$var wire 4 xor_result xor_result $end
+$var wire 1 reset reset_input $end
+$var wire 1 enable_down enable_down_input $end
+$var reg 4 counter_b_in counter_b_in $end
+$var wire 1 enable_up enable_up_input $end
+$var reg 4 counter_a_in counter_a_in $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0clk
+b0000 counter_b
+b0000 counter_a
+0counters_equal
+b0000 sum
+b0000 xor_result
+0reset
+0enable_down
+b0000 counter_b_in
+0enable_up
+b0000 counter_a_in
+$end
+#0
+1clk
+b0000 counter_b
+b0000 counter_a
+1counters_equal
+b0000 sum
+b0000 xor_result
+1reset
+0enable_down
+b1111 counter_b_in
+0enable_up
+b0000 counter_a_in
+#1
+0clk
+#2
+1clk
+b1111 counter_b
+b0000 counter_a
+0counters_equal
+b1111 sum
+b1111 xor_result
+1reset
+0enable_down
+b1111 counter_b_in
+0enable_up
+b0000 counter_a_in
+#3
+0clk
+#4
+1clk
+b1111 counter_b
+b0000 counter_a
+0counters_equal
+b1111 sum
+b1111 xor_result
+0reset
+1enable_down
+b1110 counter_b_in
+1enable_up
+b0001 counter_a_in
+#5
+0clk
+#6
+1clk
+b1110 counter_b
+b0001 counter_a
+0counters_equal
+b1111 sum
+b1111 xor_result
+0reset
+1enable_down
+b1101 counter_b_in
+1enable_up
+b0010 counter_a_in
+#7
+0clk
+#8
+1clk
+b1101 counter_b
+b0010 counter_a
+0counters_equal
+b1111 sum
+b1111 xor_result
+0reset
+1enable_down
+b1100 counter_b_in
+0enable_up
+b0010 counter_a_in
+#9
+0clk
+#10
+1clk
+b1100 counter_b
+b0010 counter_a
+0counters_equal
+b1110 sum
+b1110 xor_result
+0reset
+1enable_down
+b1011 counter_b_in
+1enable_up
+b0011 counter_a_in
+#11
+0clk
+#12
+1clk
+b1011 counter_b
+b0011 counter_a
+0counters_equal
+b1110 sum
+b1000 xor_result
+0reset
+1enable_down
+b1010 counter_b_in
+1enable_up
+b0100 counter_a_in
+#13
+0clk
+#14
+1clk
+b1010 counter_b
+b0100 counter_a
+0counters_equal
+b1110 sum
+b1110 xor_result
+0reset
+1enable_down
+b1001 counter_b_in
+0enable_up
+b0100 counter_a_in
+#15
+0clk
+#16
+1clk
+b1001 counter_b
+b0100 counter_a
+0counters_equal
+b1101 sum
+b1101 xor_result
+0reset
+1enable_down
+b1000 counter_b_in
+1enable_up
+b0101 counter_a_in
+#17
+0clk
+#18
+1clk
+b1000 counter_b
+b0101 counter_a
+0counters_equal
+b1101 sum
+b1101 xor_result
+0reset
+1enable_down
+b0111 counter_b_in
+1enable_up
+b0110 counter_a_in
+#19
+0clk
+#20
+1clk
+b0111 counter_b
+b0110 counter_a
+0counters_equal
+b1101 sum
+b0001 xor_result
+0reset
+1enable_down
+b0110 counter_b_in
+0enable_up
+b0110 counter_a_in
+#21
+0clk
+#22
+1clk
+b0110 counter_b
+b0110 counter_a
+1counters_equal
+b1100 sum
+b0000 xor_result
+0reset
+1enable_down
+b0101 counter_b_in
+1enable_up
+b0111 counter_a_in
+#23
+0clk
+#24
+1clk
+b0101 counter_b
+b0111 counter_a
+0counters_equal
+b1100 sum
+b0010 xor_result
+0reset
+1enable_down
+b0100 counter_b_in
+1enable_up
+b1000 counter_a_in
+#25
+0clk
+#26
+1clk
+b0100 counter_b
+b1000 counter_a
+0counters_equal
+b1100 sum
+b1100 xor_result
+0reset
+1enable_down
+b0011 counter_b_in
+0enable_up
+b1000 counter_a_in
+#27
+0clk
+#28
+1clk
+b0011 counter_b
+b1000 counter_a
+0counters_equal
+b1011 sum
+b1011 xor_result
+0reset
+1enable_down
+b0010 counter_b_in
+1enable_up
+b1001 counter_a_in
+#29
+0clk
+#30
+1clk
+b0010 counter_b
+b1001 counter_a
+0counters_equal
+b1011 sum
+b1011 xor_result
+0reset
+1enable_down
+b0001 counter_b_in
+1enable_up
+b1010 counter_a_in
+#31
+0clk
+#32
+1clk
+b0001 counter_b
+b1010 counter_a
+0counters_equal
+b1011 sum
+b1011 xor_result
+0reset
+1enable_down
+b0000 counter_b_in
+0enable_up
+b1010 counter_a_in
+#33
+0clk
+#34
+1clk
+b0000 counter_b
+b1010 counter_a
+0counters_equal
+b1010 sum
+b1010 xor_result
+0reset
+1enable_down
+b1111 counter_b_in
+1enable_up
+b1011 counter_a_in
+#35
+0clk
+#36
+1clk
+b1111 counter_b
+b1011 counter_a
+0counters_equal
+b1010 sum
+b0100 xor_result
+0reset
+1enable_down
+b1110 counter_b_in
+1enable_up
+b1100 counter_a_in
+#37
+0clk
+#38
+1clk
+b1110 counter_b
+b1100 counter_a
+0counters_equal
+b1010 sum
+b0010 xor_result
+0reset
+1enable_down
+b1101 counter_b_in
+0enable_up
+b1100 counter_a_in
+#39
+0clk
+#40
+1clk
+b1101 counter_b
+b1100 counter_a
+0counters_equal
+b1001 sum
+b0001 xor_result
+0reset
+1enable_down
+b1100 counter_b_in
+1enable_up
+b1101 counter_a_in
+#41
+0clk
+#42
+1clk
+b1100 counter_b
+b1101 counter_a
+0counters_equal
+b1001 sum
+b0001 xor_result
+0reset
+1enable_down
+b1011 counter_b_in
+1enable_up
+b1110 counter_a_in
+#43
+0clk
+#44
+1clk
+b1011 counter_b
+b1110 counter_a
+0counters_equal
+b1001 sum
+b0101 xor_result
+0reset
+1enable_down
+b1010 counter_b_in
+0enable_up
+b1110 counter_a_in
+#45
+0clk
+#46
+1clk
+b1010 counter_b
+b1110 counter_a
+0counters_equal
+b1000 sum
+b0100 xor_result
+0reset
+1enable_down
+b1001 counter_b_in
+1enable_up
+b1111 counter_a_in
+#47
+0clk
+#48
+1clk
+b1001 counter_b
+b1111 counter_a
+0counters_equal
+b1000 sum
+b0110 xor_result
+0reset
+1enable_down
+b1000 counter_b_in
+1enable_up
+b0000 counter_a_in
+#49
+0clk
+#50
+1clk
+b1000 counter_b
+b0000 counter_a
+0counters_equal
+b1000 sum
+b1000 xor_result
+0reset
+1enable_down
+b0111 counter_b_in
+0enable_up
+b0000 counter_a_in
+#51
+0clk
+#52
+1clk
+b0111 counter_b
+b0000 counter_a
+0counters_equal
+b0111 sum
+b0111 xor_result
+0reset
+1enable_down
+b0110 counter_b_in
+1enable_up
+b0001 counter_a_in
+#53
+0clk
+#54
+1clk
+b0110 counter_b
+b0001 counter_a
+0counters_equal
+b0111 sum
+b0111 xor_result
+0reset
+1enable_down
+b0101 counter_b_in
+1enable_up
+b0010 counter_a_in
+#55
+0clk
+#56
+1clk
+b0101 counter_b
+b0010 counter_a
+0counters_equal
+b0111 sum
+b0111 xor_result
+0reset
+1enable_down
+b0100 counter_b_in
+0enable_up
+b0010 counter_a_in
+#57
+0clk
+#58
+1clk
+b0100 counter_b
+b0010 counter_a
+0counters_equal
+b0110 sum
+b0110 xor_result
+0reset
+1enable_down
+b0011 counter_b_in
+1enable_up
+b0011 counter_a_in
+#59
+0clk

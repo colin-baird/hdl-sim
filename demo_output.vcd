@@ -1,0 +1,198 @@
+$timescale 1ns $end
+$scope module top $end
+$var wire 1 clk clk $end
+$var wire 4 count count $end
+$var wire 4 count_out count_out $end
+$var wire 1 reset reset $end
+$var wire 1 clk_en clk_en $end
+$var wire 4 count_in count_in $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0clk
+b0000 count
+b0000 count_out
+0reset
+0clk_en
+b0000 count_in
+$end
+#0
+1clk
+b0000 count
+b0000 count_out
+1reset
+0clk_en
+b0000 count_in
+#1
+0clk
+#2
+1clk
+b0000 count
+b0000 count_out
+1reset
+0clk_en
+b0000 count_in
+#3
+0clk
+#4
+1clk
+b0000 count
+b0000 count_out
+0reset
+1clk_en
+b0001 count_in
+#5
+0clk
+#6
+1clk
+b0001 count
+b0001 count_out
+0reset
+0clk_en
+b0001 count_in
+#7
+0clk
+#8
+1clk
+b0001 count
+b0001 count_out
+0reset
+1clk_en
+b0010 count_in
+#9
+0clk
+#10
+1clk
+b0010 count
+b0010 count_out
+0reset
+0clk_en
+b0010 count_in
+#11
+0clk
+#12
+1clk
+b0010 count
+b0010 count_out
+0reset
+1clk_en
+b0011 count_in
+#13
+0clk
+#14
+1clk
+b0011 count
+b0011 count_out
+0reset
+0clk_en
+b0011 count_in
+#15
+0clk
+#16
+1clk
+b0011 count
+b0011 count_out
+0reset
+1clk_en
+b0100 count_in
+#17
+0clk
+#18
+1clk
+b0100 count
+b0100 count_out
+0reset
+0clk_en
+b0100 count_in
+#19
+0clk
+#20
+1clk
+b0100 count
+b0100 count_out
+0reset
+1clk_en
+b0101 count_in
+#21
+0clk
+#22
+1clk
+b0101 count
+b0101 count_out
+0reset
+0clk_en
+b0101 count_in
+#23
+0clk
+#24
+1clk
+b0101 count
+b0101 count_out
+0reset
+1clk_en
+b0110 count_in
+#25
+0clk
+#26
+1clk
+b0110 count
+b0110 count_out
+0reset
+0clk_en
+b0110 count_in
+#27
+0clk
+#28
+1clk
+b0110 count
+b0110 count_out
+0reset
+1clk_en
+b0111 count_in
+#29
+0clk
+#30
+1clk
+b0111 count
+b0111 count_out
+0reset
+0clk_en
+b0111 count_in
+#31
+0clk
+#32
+1clk
+b0111 count
+b0111 count_out
+0reset
+1clk_en
+b1000 count_in
+#33
+0clk
+#34
+1clk
+b1000 count
+b1000 count_out
+0reset
+0clk_en
+b1000 count_in
+#35
+0clk
+#36
+1clk
+b1000 count
+b1000 count_out
+0reset
+1clk_en
+b1001 count_in
+#37
+0clk
+#38
+1clk
+b1001 count
+b1001 count_out
+0reset
+0clk_en
+b1001 count_in
+#39
+0clk

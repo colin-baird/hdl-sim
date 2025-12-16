@@ -1,0 +1,208 @@
+$timescale 1ns $end
+$scope module top $end
+$var wire 1 clk clk $end
+$var wire 8 result_reg result_reg $end
+$var wire 1 zero zero $end
+$var wire 8 result result $end
+$var wire 3 op op_input $end
+$var wire 1 clk clk_input $end
+$var wire 8 b b_input $end
+$var wire 8 a a_input $end
+$var wire 8 and_result and_result $end
+$var wire 8 diff diff $end
+$var wire 8 sum sum $end
+$var wire 8 alu_out alu_out $end
+$var reg 8 result_reg_in result_reg_in $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0clk
+b00000000 result_reg
+0zero
+b00000000 result
+b000 op
+0clk
+b00000000 b
+b00000000 a
+b00000000 and_result
+b00000000 diff
+b00000000 sum
+b00000000 alu_out
+b00000000 result_reg_in
+$end
+#0
+1clk
+b00000000 result_reg
+1zero
+b00000000 result
+b000 op
+1clk
+b00000101 b
+b00001010 a
+b00000000 and_result
+b00000101 diff
+b00001111 sum
+b00001111 alu_out
+b00001111 result_reg_in
+#1
+0clk
+#2
+1clk
+b00001111 result_reg
+0zero
+b00001111 result
+b001 op
+1clk
+b00000101 b
+b00001010 a
+b00000000 and_result
+b00000101 diff
+b00001111 sum
+b00000101 alu_out
+b00000101 result_reg_in
+#3
+0clk
+#4
+1clk
+b00000101 result_reg
+0zero
+b00000101 result
+b010 op
+1clk
+b00000111 b
+b00001111 a
+b00000111 and_result
+b00001000 diff
+b00010110 sum
+b00001111 alu_out
+b00001111 result_reg_in
+#5
+0clk
+#6
+1clk
+b00001111 result_reg
+0zero
+b00001111 result
+b011 op
+1clk
+b00000111 b
+b00001111 a
+b00000111 and_result
+b00001000 diff
+b00010110 sum
+b00001000 alu_out
+b00001000 result_reg_in
+#7
+0clk
+#8
+1clk
+b00001000 result_reg
+0zero
+b00001000 result
+b100 op
+1clk
+b00000111 b
+b00001111 a
+b00000111 and_result
+b00001000 diff
+b00010110 sum
+b00000111 alu_out
+b00000111 result_reg_in
+#9
+0clk
+#10
+1clk
+b00000111 result_reg
+0zero
+b00000111 result
+b101 op
+1clk
+b00000000 b
+b00001000 a
+b00000000 and_result
+b00001000 diff
+b00001000 sum
+b00010000 alu_out
+b00010000 result_reg_in
+#11
+0clk
+#12
+1clk
+b00010000 result_reg
+0zero
+b00010000 result
+b110 op
+1clk
+b00000000 b
+b00010000 a
+b00000000 and_result
+b00010000 diff
+b00010000 sum
+b00001000 alu_out
+b00001000 result_reg_in
+#13
+0clk
+#14
+1clk
+b00001000 result_reg
+0zero
+b00001000 result
+b000 op
+1clk
+b00000000 b
+b00000000 a
+b00000000 and_result
+b00000000 diff
+b00000000 sum
+b00000000 alu_out
+b00000000 result_reg_in
+#15
+0clk
+#16
+1clk
+b00000000 result_reg
+1zero
+b00000000 result
+b000 op
+1clk
+b00000000 b
+b00000000 a
+b00000000 and_result
+b00000000 diff
+b00000000 sum
+b00000000 alu_out
+b00000000 result_reg_in
+#17
+0clk
+#18
+1clk
+b00000000 result_reg
+1zero
+b00000000 result
+b000 op
+1clk
+b00000000 b
+b00000000 a
+b00000000 and_result
+b00000000 diff
+b00000000 sum
+b00000000 alu_out
+b00000000 result_reg_in
+#19
+0clk
+#20
+1clk
+b00000000 result_reg
+1zero
+b00000000 result
+b000 op
+1clk
+b00000000 b
+b00000000 a
+b00000000 and_result
+b00000000 diff
+b00000000 sum
+b00000000 alu_out
+b00000000 result_reg_in
+#21
+0clk

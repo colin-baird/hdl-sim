@@ -1,0 +1,34 @@
+(library
+ (name hdl_sim_lib)
+ (modules Ast EvalEnv Example Graph Operations Values Vcd))
+
+; Verilog AST lowering library
+
+(library
+ (name verilog_lower)
+ (libraries verilog_parser verilog_elab hdl_sim_lib)
+ (modules AstConv)
+ (flags
+  (:standard -open Verilog_parser -open Verilog_elab -open Hdl_sim_lib)))
+
+; Verilog parser library
+
+(library
+ (name verilog_parser)
+ (public_name hdl-sim.verilog_parser)
+ (modules Ptree Lexer Parser Parse))
+
+; Verilog elaboration library
+
+(library
+ (name verilog_elab)
+ (public_name hdl-sim.verilog_elab)
+ (libraries verilog_parser)
+ (modules Elab_ir Elaborate)
+ (flags
+  (:standard -open Verilog_parser)))
+
+(ocamllex Lexer)
+
+(menhir
+ (modules Parser))

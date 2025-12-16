@@ -1,0 +1,29 @@
+(executable
+ (public_name hdl-sim)
+ (name main)
+ (libraries hdl_sim_lib))
+
+(executable
+ (public_name verilog-parse)
+ (name parse_driver)
+ (libraries verilog_parser))
+
+(executable
+ (public_name verilog-elab)
+ (name elab_driver)
+ (libraries verilog_parser verilog_elab))
+
+(executable
+ (public_name verilog-lower)
+ (name lower_driver)
+ (libraries verilog_parser verilog_elab verilog_lower))
+
+(executable
+ (public_name verilog-sim)
+ (name verilog_sim)
+ (libraries verilog_parser verilog_elab verilog_lower hdl_sim_lib))
+
+(install
+ (section bin)
+ (files
+  (main.exe as main)))

@@ -1,0 +1,16 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/colinbaird/.cache/dune/db
+# Workspace root: /Users/colinbaird/Projects/COS326/project/hdl-sim
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/colinbaird/.opam/cs3110-2025fa/bin/ocamlc.opt -config > /var/folders/b9/6wmld41908l7m06m91bhv8bm0000gn/T/dune_b9be18_output

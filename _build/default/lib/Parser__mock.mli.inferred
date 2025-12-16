@@ -1,0 +1,103 @@
+type token =
+    WIRE
+  | WHILE
+  | TILDE
+  | TASK
+  | STAR
+  | SLASH
+  | SIZED_HEX of (int * string)
+  | SIZED_DEC of (int * string)
+  | SIZED_BIN of (int * string)
+  | SIGNED
+  | SEMI
+  | RSHIFT
+  | RPAREN
+  | REG
+  | RBRACKET
+  | RBRACE
+  | QUESTION
+  | POSEDGE
+  | PLUS
+  | PIPE
+  | PERCENT
+  | PARAMETER
+  | OUTPUT
+  | NEGEDGE
+  | NE
+  | MODULE
+  | MINUS
+  | LTEQ
+  | LT
+  | LSHIFT
+  | LPAREN
+  | LOR
+  | LBRACKET
+  | LBRACE
+  | LAND
+  | INPUT
+  | INOUT
+  | IF
+  | IDENT of string
+  | GT
+  | GENERATE
+  | GE
+  | FUNCTION
+  | FOR
+  | EQEQ
+  | EQ
+  | EOF
+  | ENDTASK
+  | ENDMODULE
+  | ENDGENERATE
+  | ENDFUNCTION
+  | ENDCASE
+  | END
+  | ELSE
+  | DECIMAL of string
+  | COMMA
+  | COLON
+  | CASE
+  | CARET
+  | BEGIN
+  | BANG
+  | AT
+  | ASSIGN
+  | ARSHIFT
+  | AMP
+  | ALWAYS_FF
+  | ALWAYS_COMB
+  | ALWAYS
+  | ALSHIFT
+val mk_loc : Lexing.position -> Lexing.position -> Ptree.loc
+val parse_error_at : Lexing.position -> Lexing.position -> string -> 'a
+val menhir_begin_marker : int
+val xv_vmodule : Ptree.vmodule
+val xv_var_decl : Ptree.var_decl list
+val xv_unary_expr : Ptree.expr
+val xv_ternary_expr : Ptree.expr
+val xv_shift_expr : Ptree.expr
+val xv_rel_expr : Ptree.expr
+val xv_range : Ptree.range
+val xv_primary_expr : Ptree.expr
+val xv_postfix_expr : Ptree.expr
+val xv_port_list : Ptree.port_decl list
+val xv_port_decl : Ptree.port_decl
+val xv_option_range_ : Ptree.range option
+val xv_mul_expr : Ptree.expr
+val xv_module_item : [ `Decls of Ptree.var_decl list | `Item of Ptree.item ]
+val xv_module_body : Ptree.var_decl list * Ptree.item list
+val xv_lvalue : Ptree.lvalue
+val xv_lor_expr : Ptree.expr
+val xv_list_module_item_ :
+  [ `Decls of Ptree.var_decl list | `Item of Ptree.item ] list
+val xv_land_expr : Ptree.expr
+val xv_item : Ptree.item
+val xv_expr_list : Ptree.expr list
+val xv_expr : Ptree.expr
+val xv_eq_expr : Ptree.expr
+val xv_declarator_list : string list
+val xv_bitxor_expr : Ptree.expr
+val xv_bitor_expr : Ptree.expr
+val xv_bitand_expr : Ptree.expr
+val xv_add_expr : Ptree.expr
+val menhir_end_marker : int

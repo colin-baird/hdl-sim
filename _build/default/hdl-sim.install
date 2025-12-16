@@ -1,0 +1,65 @@
+lib: [
+  "_build/install/default/lib/hdl-sim/META"
+  "_build/install/default/lib/hdl-sim/dune-package"
+  "_build/install/default/lib/hdl-sim/opam"
+  "_build/install/default/lib/hdl-sim/verilog_elab/Elab_ir.ml" {"verilog_elab/Elab_ir.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/Elab_ir.mli" {"verilog_elab/Elab_ir.mli"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/Elaborate.ml" {"verilog_elab/Elaborate.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/Elaborate.mli" {"verilog_elab/Elaborate.mli"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.a" {"verilog_elab/verilog_elab.a"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.cma" {"verilog_elab/verilog_elab.cma"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.cmi" {"verilog_elab/verilog_elab.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.cmt" {"verilog_elab/verilog_elab.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.cmx" {"verilog_elab/verilog_elab.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.cmxa" {"verilog_elab/verilog_elab.cmxa"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.ml" {"verilog_elab/verilog_elab.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elab_ir.cmi" {"verilog_elab/verilog_elab__Elab_ir.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elab_ir.cmt" {"verilog_elab/verilog_elab__Elab_ir.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elab_ir.cmti" {"verilog_elab/verilog_elab__Elab_ir.cmti"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elab_ir.cmx" {"verilog_elab/verilog_elab__Elab_ir.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elaborate.cmi" {"verilog_elab/verilog_elab__Elaborate.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elaborate.cmt" {"verilog_elab/verilog_elab__Elaborate.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elaborate.cmti" {"verilog_elab/verilog_elab__Elaborate.cmti"}
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab__Elaborate.cmx" {"verilog_elab/verilog_elab__Elaborate.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Lexer.ml" {"verilog_parser/Lexer.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Parse.ml" {"verilog_parser/Parse.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Parse.mli" {"verilog_parser/Parse.mli"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Parser.ml" {"verilog_parser/Parser.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Parser.mli" {"verilog_parser/Parser.mli"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Ptree.ml" {"verilog_parser/Ptree.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/Ptree.mli" {"verilog_parser/Ptree.mli"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.a" {"verilog_parser/verilog_parser.a"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.cma" {"verilog_parser/verilog_parser.cma"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.cmi" {"verilog_parser/verilog_parser.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.cmt" {"verilog_parser/verilog_parser.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.cmx" {"verilog_parser/verilog_parser.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.cmxa" {"verilog_parser/verilog_parser.cmxa"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.ml" {"verilog_parser/verilog_parser.ml"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Lexer.cmi" {"verilog_parser/verilog_parser__Lexer.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Lexer.cmt" {"verilog_parser/verilog_parser__Lexer.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Lexer.cmx" {"verilog_parser/verilog_parser__Lexer.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parse.cmi" {"verilog_parser/verilog_parser__Parse.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parse.cmt" {"verilog_parser/verilog_parser__Parse.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parse.cmti" {"verilog_parser/verilog_parser__Parse.cmti"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parse.cmx" {"verilog_parser/verilog_parser__Parse.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parser.cmi" {"verilog_parser/verilog_parser__Parser.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parser.cmt" {"verilog_parser/verilog_parser__Parser.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parser.cmti" {"verilog_parser/verilog_parser__Parser.cmti"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Parser.cmx" {"verilog_parser/verilog_parser__Parser.cmx"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Ptree.cmi" {"verilog_parser/verilog_parser__Ptree.cmi"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Ptree.cmt" {"verilog_parser/verilog_parser__Ptree.cmt"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Ptree.cmti" {"verilog_parser/verilog_parser__Ptree.cmti"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser__Ptree.cmx" {"verilog_parser/verilog_parser__Ptree.cmx"}
+]
+libexec: [
+  "_build/install/default/lib/hdl-sim/verilog_elab/verilog_elab.cmxs" {"verilog_elab/verilog_elab.cmxs"}
+  "_build/install/default/lib/hdl-sim/verilog_parser/verilog_parser.cmxs" {"verilog_parser/verilog_parser.cmxs"}
+]
+bin: [
+  "_build/install/default/bin/hdl-sim"
+  "_build/install/default/bin/main"
+  "_build/install/default/bin/verilog-elab"
+  "_build/install/default/bin/verilog-lower"
+  "_build/install/default/bin/verilog-parse"
+  "_build/install/default/bin/verilog-sim"
+]

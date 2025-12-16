@@ -1,0 +1,18 @@
+package "verilog_elab" (
+  directory = "verilog_elab"
+  description = ""
+  requires = "hdl-sim.verilog_parser"
+  archive(byte) = "verilog_elab.cma"
+  archive(native) = "verilog_elab.cmxa"
+  plugin(byte) = "verilog_elab.cma"
+  plugin(native) = "verilog_elab.cmxs"
+)
+package "verilog_parser" (
+  directory = "verilog_parser"
+  description = ""
+  requires = ""
+  archive(byte) = "verilog_parser.cma"
+  archive(native) = "verilog_parser.cmxa"
+  plugin(byte) = "verilog_parser.cma"
+  plugin(native) = "verilog_parser.cmxs"
+)

@@ -1,0 +1,148 @@
+(lang dune 3.20)
+(name hdl-sim)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   dune-package
+   opam
+   verilog_elab/Elab_ir.ml
+   verilog_elab/Elab_ir.mli
+   verilog_elab/Elaborate.ml
+   verilog_elab/Elaborate.mli
+   verilog_elab/verilog_elab.a
+   verilog_elab/verilog_elab.cma
+   verilog_elab/verilog_elab.cmi
+   verilog_elab/verilog_elab.cmt
+   verilog_elab/verilog_elab.cmx
+   verilog_elab/verilog_elab.cmxa
+   verilog_elab/verilog_elab.ml
+   verilog_elab/verilog_elab__Elab_ir.cmi
+   verilog_elab/verilog_elab__Elab_ir.cmt
+   verilog_elab/verilog_elab__Elab_ir.cmti
+   verilog_elab/verilog_elab__Elab_ir.cmx
+   verilog_elab/verilog_elab__Elaborate.cmi
+   verilog_elab/verilog_elab__Elaborate.cmt
+   verilog_elab/verilog_elab__Elaborate.cmti
+   verilog_elab/verilog_elab__Elaborate.cmx
+   verilog_parser/Lexer.ml
+   verilog_parser/Parse.ml
+   verilog_parser/Parse.mli
+   verilog_parser/Parser.ml
+   verilog_parser/Parser.mli
+   verilog_parser/Ptree.ml
+   verilog_parser/Ptree.mli
+   verilog_parser/verilog_parser.a
+   verilog_parser/verilog_parser.cma
+   verilog_parser/verilog_parser.cmi
+   verilog_parser/verilog_parser.cmt
+   verilog_parser/verilog_parser.cmx
+   verilog_parser/verilog_parser.cmxa
+   verilog_parser/verilog_parser.ml
+   verilog_parser/verilog_parser__Lexer.cmi
+   verilog_parser/verilog_parser__Lexer.cmt
+   verilog_parser/verilog_parser__Lexer.cmx
+   verilog_parser/verilog_parser__Parse.cmi
+   verilog_parser/verilog_parser__Parse.cmt
+   verilog_parser/verilog_parser__Parse.cmti
+   verilog_parser/verilog_parser__Parse.cmx
+   verilog_parser/verilog_parser__Parser.cmi
+   verilog_parser/verilog_parser__Parser.cmt
+   verilog_parser/verilog_parser__Parser.cmti
+   verilog_parser/verilog_parser__Parser.cmx
+   verilog_parser/verilog_parser__Ptree.cmi
+   verilog_parser/verilog_parser__Ptree.cmt
+   verilog_parser/verilog_parser__Ptree.cmti
+   verilog_parser/verilog_parser__Ptree.cmx))
+ (libexec (verilog_elab/verilog_elab.cmxs verilog_parser/verilog_parser.cmxs))
+ (bin (hdl-sim main verilog-elab verilog-lower verilog-parse verilog-sim)))
+(library
+ (name hdl-sim.verilog_elab)
+ (kind normal)
+ (archives
+  (byte verilog_elab/verilog_elab.cma)
+  (native verilog_elab/verilog_elab.cmxa))
+ (plugins
+  (byte verilog_elab/verilog_elab.cma)
+  (native verilog_elab/verilog_elab.cmxs))
+ (native_archives verilog_elab/verilog_elab.a)
+ (requires hdl-sim.verilog_parser)
+ (main_module_name Verilog_elab)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name verilog_elab)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Verilog_elab)
+      (impl (path verilog_elab/verilog_elab.ml-gen))))
+    (name Verilog_elab)
+    (modules
+     (module
+      (obj_name verilog_elab__Elab_ir)
+      (visibility public)
+      (source
+       (path Elab_ir)
+       (intf (path verilog_elab/Elab_ir.mli))
+       (impl (path verilog_elab/Elab_ir.ml))))
+     (module
+      (obj_name verilog_elab__Elaborate)
+      (visibility public)
+      (source
+       (path Elaborate)
+       (intf (path verilog_elab/Elaborate.mli))
+       (impl (path verilog_elab/Elaborate.ml))))))
+   (wrapped true))))
+(library
+ (name hdl-sim.verilog_parser)
+ (kind normal)
+ (archives
+  (byte verilog_parser/verilog_parser.cma)
+  (native verilog_parser/verilog_parser.cmxa))
+ (plugins
+  (byte verilog_parser/verilog_parser.cma)
+  (native verilog_parser/verilog_parser.cmxs))
+ (native_archives verilog_parser/verilog_parser.a)
+ (main_module_name Verilog_parser)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name verilog_parser)
+     (visibility public)
+     (kind alias)
+     (source
+      (path Verilog_parser)
+      (impl (path verilog_parser/verilog_parser.ml-gen))))
+    (name Verilog_parser)
+    (modules
+     (module
+      (obj_name verilog_parser__Lexer)
+      (visibility public)
+      (source (path Lexer) (impl (path verilog_parser/Lexer.ml))))
+     (module
+      (obj_name verilog_parser__Parse)
+      (visibility public)
+      (source
+       (path Parse)
+       (intf (path verilog_parser/Parse.mli))
+       (impl (path verilog_parser/Parse.ml))))
+     (module
+      (obj_name verilog_parser__Parser)
+      (visibility public)
+      (source
+       (path Parser)
+       (intf (path verilog_parser/Parser.mli))
+       (impl (path verilog_parser/Parser.ml))))
+     (module
+      (obj_name verilog_parser__Ptree)
+      (visibility public)
+      (source
+       (path Ptree)
+       (intf (path verilog_parser/Ptree.mli))
+       (impl (path verilog_parser/Ptree.ml))))))
+   (wrapped true))))

@@ -1,0 +1,153 @@
+$timescale 1ns $end
+$scope module top $end
+$var wire 1 clk clk $end
+$var wire 8 count_reg count_reg $end
+$var wire 8 count count $end
+$var wire 1 rst rst_input $end
+$var reg 8 count_reg_in count_reg_in $end
+$var wire 1 clk clk_input $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0clk
+b00000000 count_reg
+b00000000 count
+0rst
+b00000000 count_reg_in
+0clk
+$end
+#0
+1clk
+b00000000 count_reg
+b00000000 count
+1rst
+b00000000 count_reg_in
+1clk
+#1
+0clk
+#2
+1clk
+b00000000 count_reg
+b00000000 count
+1rst
+b00000000 count_reg_in
+1clk
+#3
+0clk
+#4
+1clk
+b00000000 count_reg
+b00000000 count
+0rst
+b00000001 count_reg_in
+1clk
+#5
+0clk
+#6
+1clk
+b00000001 count_reg
+b00000001 count
+0rst
+b00000010 count_reg_in
+1clk
+#7
+0clk
+#8
+1clk
+b00000010 count_reg
+b00000010 count
+0rst
+b00000011 count_reg_in
+1clk
+#9
+0clk
+#10
+1clk
+b00000011 count_reg
+b00000011 count
+0rst
+b00000100 count_reg_in
+1clk
+#11
+0clk
+#12
+1clk
+b00000100 count_reg
+b00000100 count
+0rst
+b00000101 count_reg_in
+1clk
+#13
+0clk
+#14
+1clk
+b00000101 count_reg
+b00000101 count
+0rst
+b00000110 count_reg_in
+1clk
+#15
+0clk
+#16
+1clk
+b00000110 count_reg
+b00000110 count
+0rst
+b00000111 count_reg_in
+1clk
+#17
+0clk
+#18
+1clk
+b00000111 count_reg
+b00000111 count
+0rst
+b00001000 count_reg_in
+1clk
+#19
+0clk
+#20
+1clk
+b00001000 count_reg
+b00001000 count
+0rst
+b00001001 count_reg_in
+1clk
+#21
+0clk
+#22
+1clk
+b00001001 count_reg
+b00001001 count
+0rst
+b00001010 count_reg_in
+1clk
+#23
+0clk
+#24
+1clk
+b00001010 count_reg
+b00001010 count
+0rst
+b00001011 count_reg_in
+1clk
+#25
+0clk
+#26
+1clk
+b00001011 count_reg
+b00001011 count
+0rst
+b00001100 count_reg_in
+1clk
+#27
+0clk
+#28
+1clk
+b00001100 count_reg
+b00001100 count
+0rst
+b00001101 count_reg_in
+1clk
+#29
+0clk
