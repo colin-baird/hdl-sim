@@ -1,4 +1,4 @@
-# dune build
+# dune exec ./bin/verilog_sim.exe
 # OCAMLPARAM: unset
 # Shared cache: enabled-except-user-rules
 # Shared cache location: /Users/colinbaird/.cache/dune/db
@@ -13,4 +13,4 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/colinbaird/.opam/cs3110-2025fa/bin/ocamlc.opt -config > /var/folders/b9/6wmld41908l7m06m91bhv8bm0000gn/T/dune_b9be18_output
+$ /Users/colinbaird/.opam/cs3110-2025fa/bin/ocamlc.opt -config > /var/folders/b9/6wmld41908l7m06m91bhv8bm0000gn/T/dune_1783a1_output
